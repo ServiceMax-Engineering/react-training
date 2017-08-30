@@ -1,5 +1,5 @@
 # react-in-action
-React introduction presentation, powered by Reveal.js
+React training presentation, powered by Reveal.js
 
 ## Topics
  * Why React
@@ -13,3 +13,4 @@ git clone https://github.com/shinxi/react-intro.git
 ```
 Open index.html.
 Then enjoy.
+
