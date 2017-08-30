@@ -552,7 +552,7 @@ const element = <div tabIndex="0"></div>;
                         </code></pre>
                         <li>You may also use curly braces to embed a JavaScript expression (remember JSX is also an Expression) in an attribute:</li>
                         <pre><code class="hljs" data-trim contenteditable>
-const element = <img src={user.avatarUrl}></img>;
+const element = &lt;img src={user.avatarUrl}></img>;
                         </code></pre>
                         <li>JSX attributes will be passed to a user-defined component as a single object named props</li>
                     </ul>
@@ -560,7 +560,7 @@ const element = <img src={user.avatarUrl}></img>;
                 <section>
                     <h3><a href="https://facebook.github.io/react/docs/introducing-jsx.html">Functional and Class Components</a></h3>
                     <ul>
-                        <li>JSX tag could be a DOM tag(lowercase), or a user-defined component(functional/class) name(uppercase)</li>
+                        <li>JSX tag could be a DOM tag(lowercase), or a user-defined component(functional/class) name(first letter uppercase)</li>
                         <li>Functional component</li>
                         <pre><code class="hljs" data-trim contenteditable>
 function Welcome(props) {
@@ -652,7 +652,7 @@ class Reservation extends React.Component {
       <form>
         <label>
           Is going:
-          <input
+          &lt;input
             name="isGoing"
             type="checkbox"
             checked={this.state.isGoing}
@@ -661,7 +661,7 @@ class Reservation extends React.Component {
         <br />
         <label>
           Number of guests:
-          <input
+          &lt;input
             name="numberOfGuests"
             type="number"
             value={this.state.numberOfGuests}
@@ -908,41 +908,19 @@ const User = ({ match }) => {
                 <h3>Demo: <a href="https://github.com/ServiceMax-Engineering/neocore-react-ui">neocore-react-ui</a></h3>
             </section>
             <section>
-                <h3>Demo: <a href="https://github.com/ServiceMax-Engineering/neocore-react-ui">react-sample</a></h3>
+                <h3>Demo: <a href="https://github.com/ServiceMax-Engineering/react-sample">react-sample</a></h3>
             </section>
             <section>
-                <h3>HomeWork</h3>
-                <ol style="font-size: 28px">
-                    <li><a href="https://github.com/ServiceMax-Engineering/neocore-react-ui">neocore-react-ui</a> ESLint issue fix.
-                        <ul>
-                            <li>Fork https://github.com/ServiceMax-Engineering/neocore-react-ui</li>
-                            <li>Fix at least 10 types eslint issues.</li>
-                            <li>After you commit fixes, do pull request. Start with "React Training"</li>
-                        </ul>
-                    </li>
-                    <li><a href="https://github.com/ServiceMax-Engineering/neocore-react-ui">neocore-react-ui</a> ESLint issue fix.
-                        <ul>
-                            <li>Fork https://github.com/ServiceMax-Engineering/react-sample</li>
-                            <li>Follow <a href="https://github.com/ServiceMax-Engineering/react-sample/blob/master/getting-started.md">doc</a> to start the sample.</li>
-                            <li>Go to http://localhost:3000/home/realworld</li>
-                            <li>Refactor redux/modules to use redux action, pls refer neocore-react-ui/src/actions/object.js</li>
-                            <li>Implement build list add function using redux ducks pattern + mock server,(rest api: /api/build, request type: put)</li>
-                            <li>After you commit fixes, do pull request. Start with "React Training"</li>
-                        </ul>
-                    </li>
-                </ol>
-            </section>
-            <section style="display:none">
                 <h3>Resources</h3>
                 <ul>
-                    <li><a href="https://github.com/petehunt/react-howto" target="_blank">React How To</a></li>
                     <li><a href="https://facebook.github.io/react/docs/hello-world.html" target="_blank">React Quck Start</a></li>
-                    <li><a href="https://github.com/petehunt/webpack-howto" target="_blank">Webpack How To</a></li>
+                    <li><a href="https://github.com/petehunt/react-howto" target="_blank">React How To</a></li>
                     <li><a href="http://redux.js.org/" target="_blank">Redux Intro</a></li>
+                    <li><a href="https://reacttraining.com/react-router/web/guides/philosophy" target="_blank">React Router Guides</a></li>
                     <li><a href="https://github.com/reactjs/react-router-tutorial" target="_blank">React Router Tutorial</a></li>
                     <li><a href="https://www.youtube.com/watch?v=jh_Qzi-yHU0" target="_blank">React + ES next = ♥ - React Conf 2017</a></li>
-                    <li><a href="https://github.com/euler-ui/boilerplate" target="_blank">React BoilerPlate for React + React Bootstrap</a></li>
-                    <li><a href="https://github.com/euler-ui/react-material-ui-boilerplate" target="_blank">BoilerPlate For React + Material UI + React Router + Redux</a></li>
+                    <li><a href="https://github.com/ServiceMax-Engineering/react-sample" target="_blank">React Sample</a></li>
+                    <li><a href="https://github.com/ServiceMax-Engineering/neocore-react-ui" target="_blank">Neocore React UI</a></li>
                 </ul>
             </section>
         </div>
